@@ -7,11 +7,10 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { Link } from "react-scroll";
 import ContactImg from "../assets/contact.jpg";
+import fileUrl from "../assets/gamelayo.pdf";
 
 const Contact = () => {
-  const fileName = "gamelayodele.pdf";
-  const fileUrl =
-    "https://drive.google.com/file/d/1BTi7-uU9iVbzSaxs-ZkmOUWq9NiVtU_Q";
+  const fileName = "gamel ayodele resume.pdf";
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -88,12 +87,7 @@ const Contact = () => {
                     <AiOutlineMail />
                   </div>
 
-                  <a
-                    href={fileUrl}
-                    download={fileName}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href={fileUrl} download={fileName} rel="noreferrer">
                     <div className="rounded-full shadow-md shadow-gray-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#5651e5] to-[#709dff]">
                       <BsFillPersonLinesFill />
                     </div>

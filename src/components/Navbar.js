@@ -3,20 +3,24 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
-
+import fileUrl from "../assets/gamelayo.pdf";
+import Logo from "../assets/gamel.png";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const fileName = "gamelayodele.pdf";
-  const fileUrl =
-    "https://drive.google.com/file/d/1BTi7-uU9iVbzSaxs-ZkmOUWq9NiVtU_Q";
+  const fileName = "gamel ayodele resume.pdf";
 
   return (
     <nav className="rounded-div flex items-center justify-between h-20 font-bold px-4 bg-secondary">
       <Link to="/">
-        <h1 className="text-2xl cursor-pointer text-[#5651e5]">GAMEL</h1>
+        {/* <h1 className="text-2xl cursor-pointer text-[#5651e5]">GAMEL</h1> */}
+        <img
+          src={Logo}
+          alt="logo"
+          className="w-[80px] h-[50px] cursor-pointer"
+        />
       </Link>
 
       {/* menu */}
@@ -136,7 +140,6 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href={fileUrl}
               download={fileName}
-              target="_blank"
               rel="noreferrer"
             >
               Resume <BsFillPersonLinesFill size={30} />

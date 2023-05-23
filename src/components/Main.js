@@ -3,11 +3,10 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
-
+import fileUrl from "../assets/gamelayo.pdf";
 const Main = () => {
-  const fileName = "gamelayodele.pdf";
-  const fileUrl =
-    "https://drive.google.com/file/d/1BTi7-uU9iVbzSaxs-ZkmOUWq9NiVtU_Q";
+  const fileName = "gamel ayodele resume.pdf";
+
   return (
     <div id="main" className="w-full h-screen text-center px-8 py-4">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
@@ -47,12 +46,7 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <a
-              href={fileUrl}
-              download={fileName}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={fileUrl} download={fileName} rel="noreferrer">
               <div className="rounded-full shadow-md shadow-gray-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#5651e5] to-[#709dff]">
                 <BsFillPersonLinesFill />
               </div>

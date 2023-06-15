@@ -37,6 +37,18 @@ const Tour = () => {
             application is dynamic routing through the &quot;React Router
             DOM&quot; package.
           </p>
+          <div className="mt-2">
+            <div>Test Account</div>
+            <div>
+              <div>
+                {" "}
+                <span>Email:</span> gamel@gmail.com
+              </div>
+              <div>
+                <span>Password:</span> 12345
+              </div>
+            </div>
+          </div>
           <a
             href="https://github.com/gamelayo/tour-app"
             target="_blank"

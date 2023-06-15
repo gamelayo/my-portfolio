@@ -39,6 +39,18 @@ const Blog = () => {
             &quot;React Redux and ReduxJs/toolkit&quot; package for app-wide
             state management.
           </p>
+          <div className="mt-2">
+            <div>Test Account</div>
+            <div>
+              <div>
+                {" "}
+                <span>Email:</span> ayo@gmail.com
+              </div>
+              <div>
+                <span>Password:</span> 12345
+              </div>
+            </div>
+          </div>
           <a
             href="https://github.com/gamelayo/blog-app"
             target="_blank"

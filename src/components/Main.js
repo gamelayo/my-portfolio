@@ -2,7 +2,7 @@ import React from "react";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import fileUrl from "../assets/gamelayo.pdf";
 const Main = () => {
   const fileName = "gamel ayodele resume.pdf";
@@ -41,7 +41,7 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link>
+            <Link to="contact" smooth={true} duration={500}>
               <div className="rounded-full shadow-md shadow-gray-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#5651e5] to-[#709dff]">
                 <AiOutlineMail />
               </div>
